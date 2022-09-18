@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100&display=swap'); 
 h1 { color:aquamarine} 
-h1 {
+h1 {font-family: 'Reenie Beanie', cursive;
     font-size: 100px;
     text-align: center;
   }
@@ -18,10 +18,4 @@ img{
 div {
     text-align: center;
   }
- 
-  <!--
-a:hover 
-{
-  background-color: rgb(255, 255, 166);
-}
-//-->
+  
