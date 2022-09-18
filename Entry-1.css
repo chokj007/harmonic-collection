@@ -1,7 +1,21 @@
-
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100&display=swap'); 
-</style>  
+h1 { color:aquamarine} 
+h1 {
+    font-size: 200px;
+  }
 body { font-family: 'Reenie Beanie', cursive;
-    font-family: 'Roboto', sans-serif;
 }
+h1 {
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+body {background-color: rgb(255, 255, 255);}
+img{
+    height:200px;
+    width: 200px;
+}
+div {
+    text-align: center;
+  }
