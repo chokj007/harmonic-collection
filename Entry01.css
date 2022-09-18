@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100&display=swap'); 
+h1 { color:aquamarine} 
+h1 {
+    font-size: 100px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 200px;
+    text-align: center;
+  }
+body { font-family: 'Reenie Beanie', cursive;
+}
+body {background-color: rgb(255, 255, 255);}
+img{
+    height:400px;
+    width: 400px;
+}
+div {
+    text-align: center;
+  }
