@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100&display=swap'); 
 
-h1 {color:aquamarine
-}
-h1 {font-family: 'Reenie Beanie', cursive;
+h1 { color:aquamarine;
+  font-family:'Reenie Beanie', cursive;
     font-size: 100px;
     text-align: center;
   }
+
   h2 {font-family: 'Reenie Beanie', cursive;
     font-size: 50px;
     text-align: center;
   }
+
   img{
     height:200px;
     width: 200px;
@@ -29,13 +30,36 @@ h1 {font-family: 'Reenie Beanie', cursive;
   width: 200px
 }
 
-body {background-color: rgb(255, 255, 255);}
-
 div {
-    text-align: left;
-  }
+  background-image: url('NOM\ NOM\ NOM.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: #000000;
+  text-align: left;
+}
+
+body {background-color: rgb(255, 255, 255);}
 
 ol{ 
   font-family: 'Kalam', cursive;
 }
 
+ .additionalpics{
+  height:500px;
+  width: 500px;
+  margin: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+
+ h3{
+  text-align: center;
+  font-family: 'Kalam', cursive
+ }
+ 
+ div{
+  white-space:nowrap;
+ }
