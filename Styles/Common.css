@@ -4,6 +4,11 @@ h1 { font-family: 'Reenie Beanie', cursive;
     color:aquamarine;
   text-align: center;
 } 
+
+h2 {font-family: 'Reenie Beanie', cursive;
+  font-size: 50px;
+  text-align: center}
+
 p {font-family: 'Kalam', cursive;
 }
 
