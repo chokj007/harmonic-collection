@@ -1,37 +1,51 @@
 
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
 
-div:nth-child(1) {
-    background-color: aquamarine;
-  color: #000000;
-  text-align: left;;
-  left: 30px;
-  position: sticky;
-  top: 30px;
-}
-div:nth-child(2) {
-    text-align: center;
-    font-family: 'Kalam', cursive;
-}
+  img{
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+  }
 
 div:nth-child(3) { 
     background-image: url(smirkingOboi.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    color: #000000;
-    text-align: left;
+    color: rgb(116, 255, 100);
+    left: 30px;
+    position: sticky;
+     top: 30px;
 }
 
-div:nth-child(4) {
-    text-align: center;
-    font-family: 'Kalam', cursive;
+div:nth-child(6) {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.Flex {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes animate {
+    0%{ 
+        opacity: 0;
+        transform: scale(.5);
+    }
+    100% {
+        opacity:1;
+        transform: scale (.5);
+    }
 }
 
 ol{ 
     font-family: 'Kalam', cursive;
   } 
-
-
 
 h2{
     margin-bottom: 40px;
