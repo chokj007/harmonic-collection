@@ -3,10 +3,7 @@
     position: absolute;
     top: 8px;
     left: 16px;
-  }
-
-  img{
-        width: 100%;
+    width: 100%;
         height: auto;
         opacity: 0.5;
   }
