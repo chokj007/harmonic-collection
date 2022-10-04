@@ -1,4 +1,11 @@
 
+
+body{
+  background-image: url("Kakapo incoming.png");
+  background-size: 85%;
+  background-position: bottom;
+  background-repeat:repeat-x}
+
 ol{ 
     font-family: 'Kalam', cursive;
   } 
@@ -11,15 +18,7 @@ h2{
 p {padding: 5px;
  }
 
- div:nth-child(2) {
-background-image: url("Kakapo\ incoming.png");
-background-repeat:repeat;
-height:500px;
-background-position: center;
-background-size: cover;
- }
-
-div:nth-child(3){
+ div{
   text-align: center;
     font-size: 20 px;
    }
@@ -34,12 +33,12 @@ div:nth-child(3){
 	div:hover + aside { visibility: visible; }
 }
 
-div:nth-child(4) {
+.pic {
   text-align: center;
     font-size: 30 px;
     background-image: url("Blindly starring.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    color: rgb(122, 255, 228) 
+    color: rgb(11, 133, 0) 
 }
