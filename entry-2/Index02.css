@@ -30,7 +30,7 @@ h1 { color:aquamarine;
   width: 200px
 }
 
-div:not(:first-child){ 
+div:not(:second-child){ 
   background-image: url('NOM\ NOM\ NOM.gif');
   background-repeat: no-repeat;
   background-attachment: fixed;
