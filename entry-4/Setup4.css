@@ -1,0 +1,13 @@
+
+body {
+padding: 20px;
+background-image: url("Kakapoincoming.jpg");
+background-repeat: repeat
+  }
+    
+aside,
+div {
+	padding: 10px;
+    text-align: center;
+    font-size: 20 px;
+}
