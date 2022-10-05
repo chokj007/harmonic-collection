@@ -3,6 +3,7 @@
     --font size: 16px; 
     --brand-color: gold;
     --sidebar-color: #eee;
+    --link-color: red;
 }
 
 @media(min-width: 768px ){
@@ -27,7 +28,9 @@ h2 {
 
 p{ max-width:80ch;}
 
-p:not(:first child)
+p:not(:first child) {
+    margin top: var (--page-spacing)
+}
 
 header,
 nav, 
@@ -43,4 +46,11 @@ footer {
 
 }
 
-nav 
+nav, 
+aside { 
+background color: var(--sidebar-color)
+}
+
+a{ 
+color: var(--link-color)
+}
