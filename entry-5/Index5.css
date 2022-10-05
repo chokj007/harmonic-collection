@@ -1,0 +1,46 @@
+:root{
+    --page-spacing: 24px; 
+    --font size: 16px; 
+    --brand-color: gold;
+    --sidebar-color: #eee;
+}
+
+@media(min-width: 768px ){
+    :root {
+        --page-spacing: 36px; 
+        --font size: 324x; 
+    }
+}
+
+body{
+    font-size: var(--body-cop);
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: calc(var(--body-cop)*4)
+}
+
+h2 { 
+    font-size: calc(var(--body-cop)*2)
+}
+
+p{ max-width:80ch;}
+
+p:not(:first child)
+
+header,
+nav, 
+article,
+aside, 
+footer {
+    padding: var(--page-spacing);
+}
+
+header, 
+footer { 
+    background color: var (--brand-color)
+
+}
+
+nav 
