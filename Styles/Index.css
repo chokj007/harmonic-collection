@@ -1,0 +1,67 @@
+:root{
+    --page-spacing: 24px; 
+    --body-cop: 16px; 
+    --sidebarcolor: white;
+    --background-color: aquamarine;
+    }
+
+
+@media(min-width: 768px ){
+
+    :root {
+        --page-spacing: 36px; 
+        --fontsize: 324x; 
+    }
+}
+
+body{
+    font-size: var(--body-cop);
+    font-family: 'Reenie Beanie', cursive;
+}
+
+h1{
+    font-size: calc(var(--body-cop)*4)
+}
+
+h2 { 
+    font-size: calc(var(--body-cop)*2)
+}
+
+h3{
+    font-size: calc(var(--body-cop)*3);
+    text-align: center
+}
+
+p{ max-width:80ch;}
+
+p:not(:first child) {
+    margin-top: var (--page-spacing)
+}
+
+header,
+nav, 
+article,
+aside, 
+footer {
+    padding: var(--page-spacing);
+}
+
+nav, 
+aside { 
+background-color: var(--sidebar-color)
+}
+
+
+@media (min-width:768px) {
+   main {
+    display: flex;
+   }
+
+   nav,
+   aside { width: 25%}
+}
+
+a:hover 
+{
+  background-color: var(--background-color)
+}
