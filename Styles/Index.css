@@ -5,6 +5,17 @@
     --background-color: aquamarine;
     }
 
+ .child1{
+background-image: url('KoalaCover.jpg');
+}
+
+.child2 {
+    background-image: url("OstrichCover.jpeg");
+}
+
+.child3{
+    background-image: url("Kakapo.jpeg");
+}
 
 @media(min-width: 768px ){
 
@@ -29,7 +40,8 @@ h2 {
 
 h3{
     font-size: calc(var(--body-cop)*3);
-    text-align: center
+    text-align: center;
+    padding: var(--page-spacing)
 }
 
 p{ max-width:80ch;}

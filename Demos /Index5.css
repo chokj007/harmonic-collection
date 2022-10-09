@@ -1,6 +1,6 @@
 :root{
     --page-spacing: 24px; 
-    --font size: 16px; 
+    --fontsize: 16px; 
     --brand-color: gold;
     --sidebar-color: #ccc;
     --link-color: red; 
@@ -10,7 +10,7 @@
 
     :root {
         --page-spacing: 36px; 
-        --font size: 324x; 
+        --fontsize: 324x; 
     }
 }
 
@@ -30,7 +30,7 @@ h2 {
 p{ max-width:80ch;}
 
 p:not(:first child) {
-    margin top: var (--page-spacing)
+    margin-top: var (--page-spacing)
 }
 
 header,
@@ -43,26 +43,24 @@ footer {
 
 header, 
 footer { 
-    background color: var (--brand-color)
+    background-color: var (--brand-color)
 
 }
 
 nav, 
 aside { 
-background color: var(--sidebar-color)
+background-color: var(--sidebar-color)
 }
 
 a{ 
 color: var(--link-color)
 }
 
-@media (min width:768px) {
-   main {
-    dispaly: flex;
+@media (min-width:768px) {
+   main { 
+    display: flex;
    }
 
    nav,
-   aside { width: 25%}
-
-   article {flex-grow: }
+   aside { width: 25%} 
 }
