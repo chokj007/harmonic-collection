@@ -2,11 +2,12 @@
     --page-spacing: 24px; 
     --font size: 16px; 
     --brand-color: gold;
-    --sidebar-color: #eee;
-    --link-color: red;
+    --sidebar-color: #ccc;
+    --link-color: red; 
 }
 
 @media(min-width: 768px ){
+
     :root {
         --page-spacing: 36px; 
         --font size: 324x; 
@@ -53,4 +54,15 @@ background color: var(--sidebar-color)
 
 a{ 
 color: var(--link-color)
+}
+
+@media (min width:768px) {
+   main {
+    dispaly: flex;
+   }
+
+   nav,
+   aside { width: 25%}
+
+   article {flex-grow: }
 }
