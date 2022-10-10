@@ -5,37 +5,16 @@
     --background-color: aquamarine;
     }
 
-    div{ 
-        padding: 10px;
-        background-repeat: repeat-x; 
-        min-height: 30px;
-        font-size: calc(var(--body-cop)*8);
-        text-align: center;
-         padding: var(--page-spacing)
-    }
-
-.koala { 
+ .hi{
 background-image: url('KoalaCover.jpg');
-background-size: 20%;
-background-position: center;
-background-repeat: repeat-x;
-color: whitesmoke
 }
 
-.ostrich {
+.child2 {
     background-image: url("OstrichCover.jpeg");
-    background-size: 30%;
-    background-position: center;
-    background-repeat: repeat-x;
-    color: azure
-} 
+}
 
-.kakapo{
-    background-image: url("Kakapo.jpeg"); 
-    background-size:30%; 
-    background-position: center; 
-    background-repeat: repeat-x;
-    color:aliceblue
+.child3{
+    background-image: url("Kakapo.jpeg");
 }
 
 @media(min-width: 768px ){
@@ -59,15 +38,13 @@ h2 {
     font-size: calc(var(--body-cop)*2)
 }
 
-h4 {
+h3{
     font-size: calc(var(--body-cop)*3);
-    text-align: center
+    text-align: center;
+    padding: var(--page-spacing)
 }
 
-p{ max-width:80ch; 
-text-align: center;
-margin-top: var(var(--page-spacing))
-}
+p{ max-width:80ch;}
 
 p:not(:first child) {
     margin-top: var (--page-spacing)
