@@ -4,17 +4,9 @@
     --color: azure; 
 }
 
-@media( max-width: 768px){
-    :root{
-     --page-spacing: 36px; 
-    --fontsize: 324x; 
-}
-
-
 body{
     font-size: var(--paragprah);
-    font-family: 'Reenie Beanie', cursive;
-}
+    font-family: 'Reenie Beanie', cursive; }
 
 h1{
     font-size: calc(var(--paragprah)*4)
@@ -25,9 +17,11 @@ h2 {
     margin: calc(var(--page-spacing))
 }
 
-h4 {
-    font-size: calc(var(--paragprah)*3);
-    text-align: center
+
+@media( max-width: 768px){
+    :root{
+     --page-spacing: 36px; 
+    --fontsize: 324x; 
 }
 
 p{ max-width:80ch; 
@@ -58,6 +52,8 @@ section{
 
 
 @media (min-width:768px) {
+
+    
     
     main { display: flex;
         flex-direction: column;
@@ -96,4 +92,9 @@ animation-direction: reverse;
     background-image: url(Underwater2.jpg);
     background-repeat:repeat-y;
 
+}
+
+.bubbles{
+    background-image: url("Bubbles.gif");
+    height: 500px;
 }
