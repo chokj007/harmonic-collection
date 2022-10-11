@@ -9,7 +9,7 @@
      --page-spacing: 36px; 
     --fontsize: 324x; 
 }
-}
+
 
 body{
     font-size: var(--paragprah);
@@ -37,6 +37,8 @@ margin-top: var(var(--page-spacing))
 
 p:not(:first-child) {
     margin-top: var(--page-spacing)
+}
+
 }
 
 section{ 
