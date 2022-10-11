@@ -1,7 +1,7 @@
 :root{
     --page-spacing: 24px; 
     --body-cop: 16px; 
-    --sidebarcolor: white;
+    --sidebarcolor: azure;
     --background-color: aquamarine;
     }
 
@@ -19,7 +19,7 @@ background-image: url('KoalaCover.jpg');
 background-size: 20%;
 background-position: center;
 background-repeat: repeat-x;
-color: whitesmoke
+color: var(--sidebar-color)
 }
 
 .ostrich {
@@ -27,7 +27,7 @@ color: whitesmoke
     background-size: 30%;
     background-position: center;
     background-repeat: repeat-x;
-    color: azure
+    color: var(--sidebar-color)
 } 
 
 .kakapo{
@@ -35,10 +35,18 @@ color: whitesmoke
     background-size:30%; 
     background-position: center; 
     background-repeat: repeat-x;
-    color:aliceblue
+    color: var(--sidebar-color)
 }
 
-@media(min-width: 768px ){
+.OceanSunfish{
+    background-image: url("OceanSunfishCover.jpg");
+    background-size:30%; 
+    background-position: center; 
+    background-repeat: repeat-x;
+    color: var(--sidebar-color);
+}
+
+@media(max-width: 768px){
 
     :root {
         --page-spacing: 36px; 
