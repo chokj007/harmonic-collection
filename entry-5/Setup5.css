@@ -1,0 +1,10 @@
+body{ 
+    padding: 20px;
+}
+
+div:not(second-child){ 
+    background-image:url(OceanSunfish1.jpg);
+    background-size:cover;
+    background-position:center;
+    padding: 10px
+}

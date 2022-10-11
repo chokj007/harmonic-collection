@@ -1,0 +1,97 @@
+:root{
+    --page-spacing:30px; 
+    --paragprah: 18px; 
+    --color: azure; 
+}
+
+@media( max-width: 768px){
+    :root{
+     --page-spacing: 36px; 
+    --fontsize: 324x; 
+}
+}
+
+body{
+    font-size: var(--paragprah);
+    font-family: 'Reenie Beanie', cursive;
+}
+
+h1{
+    font-size: calc(var(--paragprah)*4)
+}
+
+h2 { 
+    font-size: calc(var(--paragprah)*2);
+    margin: calc(var(--page-spacing))
+}
+
+h4 {
+    font-size: calc(var(--paragprah)*3);
+    text-align: center
+}
+
+p{ max-width:80ch; 
+    text-align: center;
+margin-top: var(var(--page-spacing))
+}
+
+p:not(:first-child) {
+    margin-top: var(--page-spacing)
+}
+
+section{ 
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+    align-content: space-evenly;
+    justify-content: center;
+    gap: 10px 20px;
+    }
+        
+    
+    div{ width: 140px;
+   font-size: var(--paragprah)
+}
+
+
+@media (min-width:768px) {
+    
+    main { display: flex;
+        flex-direction: column;
+    flex-wrap: wrap;}
+}  
+
+.foranimation{
+    width: 100px;
+  height: 100px;
+  position: relative;
+  animation: move 8s infinite;
+}
+
+@keyframes move{ 
+from {left: -1000px}
+to {left: 1000px}
+}
+
+.foranimation2{ 
+    width: 400px;
+  height: 400px;
+  position: relative;
+  animation: move 5s infinite;
+animation-direction: reverse;
+}
+
+.foranimation3{ 
+    width: 200px;
+  height: 200px;
+  position: relative;
+  animation: move 5s infinite;
+animation-direction: reverse;
+}
+
+.underwaterbkg{
+    background-image: url(Underwater2.jpg);
+    background-repeat:repeat-y;
+
+}
