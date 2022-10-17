@@ -4,6 +4,24 @@ h1{font-family: 'Reenie Beanie', cursive;
   color:aquamarine;
   text-align: center;}
 
+  p{
+    text-align: center;
+    margin-top: var(--page-spacing)
+    }
+    
+    p:not(:first-child) {
+      margin-top: var(--page-spacing)
+    }
+
+    footer{ 
+      font-family: 'Reenie Beanie', cursive;
+      font-size: 30px;
+      text-align: left;
+      margin-left: var(--page-spacing);
+    margin-top: calc(var(--page-spacing)*4);
+    }
+    
+
 @media (min-width:768px) { 
   :root{
     --page-spacing:30px; 
@@ -22,7 +40,7 @@ h1{font-family: 'Reenie Beanie', cursive;
   }
 
     h2{
-      font-size: calc(var(--paragprah)*5);
+      font-size: calc(var(--paragprah)*5hb);
       margin: calc(var(--page-spacing));
       text-align: center;
     }
@@ -35,6 +53,11 @@ img{
     height:400px;
     width: 400px;
 }
+
+a:hover 
+  {
+    background-color: aquamarine;
+  }
 } 
 
 @media( max-width: 768px){
@@ -46,6 +69,7 @@ img{
   --dimensions: 100px
 }
 
+
 h1 {
 font-size: var(--fontsize);
 max-width: var(--maxwidth);
@@ -55,7 +79,6 @@ text-align: center; }
 h2{
   margin: var(--page-spacing)
 }
-
 
 img{
 width: calc(var(--dimesions)50%);
