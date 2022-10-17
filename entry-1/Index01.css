@@ -1,21 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100&display=swap'); 
-h1 { color:aquamarine} 
-h1 {font-family: 'Reenie Beanie', cursive;
-    font-size: 100px;
-    text-align: center;
+
+h1{font-family: 'Reenie Beanie', cursive;
+  color:aquamarine;
+  text-align: center;}
+
+@media (min-width:768px) { 
+  :root{
+    --page-spacing:30px; 
+    --paragprah: 18px; 
+    --color: rgb(255, 255, 255); 
+
+
   }
-  h2 {
-    font-size: 150px;
-    text-align: center;
+  h1 { 
+    font-size: calc(var(--paragprah)*10)
+  } 
+
+  body { font-family: 'Reenie Beanie', cursive;
+    font-size: var(--paragprah);
+    background-color: var(--color);
   }
-body { font-family: 'Reenie Beanie', cursive;
-}
-body {background-color: rgb(255, 255, 255);}
+
+    h2{
+      font-size: calc(var(--paragprah)*5);
+      margin: calc(var(--page-spacing));
+      text-align: center;
+    }
+  div {
+      text-align: center;
+    }
+
+
 img{
     height:400px;
     width: 400px;
 }
-div {
-    text-align: center;
-  }
-  
+} 
+
+@media( max-width: 768px){
+  :root{
+   --page-spacing: 36px; 
+   --paragprah: 12px; 
+  --fontsize: 100px; 
+  --maxwidth: 80ch;
+  --dimensions: 100px
+}
+
+h1 {
+font-size: var(--fontsize);
+max-width: var(--maxwidth);
+margin-top: var(--page-spacing);
+text-align: center; }
+
+h2{
+  margin: var(--page-spacing)
+}
+
+
+img{
+width: calc(var(--dimesions)50%);
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+}
