@@ -24,6 +24,7 @@ h1{font-family: 'Reenie Beanie', cursive;
       font-size: calc(var(--paragprah)*2);
       margin: calc(var(--page-spacing));
       text-align: center;
+      color: black;
     }
   div {
       text-align: center;
