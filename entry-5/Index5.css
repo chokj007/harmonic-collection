@@ -54,7 +54,6 @@ section{
 @media (min-width:768px) {
 
     
-    
     main { display: flex;
         flex-direction: column;
     flex-wrap: wrap;}
