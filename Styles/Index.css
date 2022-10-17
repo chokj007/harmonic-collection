@@ -104,6 +104,10 @@ background-color: var(--sidebar-color)
    aside { width: 25%}
 }
 
+a {
+    color: var(--sidebar-color)
+}
+
 a:hover 
 {
   background-color: var(--background-color)
