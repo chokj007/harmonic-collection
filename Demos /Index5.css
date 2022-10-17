@@ -47,11 +47,6 @@ footer {
 
 }
 
-nav, 
-aside { 
-background-color: var(--sidebar-color)
-}
-
 a{ 
 color: var(--link-color)
 }
@@ -62,5 +57,11 @@ color: var(--link-color)
    }
 
    nav,
-   aside { width: 25%} 
+   aside { width: 25%;
+flex: shrink 0;
+background-color: var(--sidebar-color)} 
+}
+
+article{
+    flex-grow: 1; 
 }
