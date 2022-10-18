@@ -52,6 +52,7 @@ h1{font-family: 'Reenie Beanie', cursive;
 
 .div{ 
   background-image: url('NOM\ NOM\ NOM.gif');
+  object-fit: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
