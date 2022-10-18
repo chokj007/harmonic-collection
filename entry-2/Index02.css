@@ -1,51 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100&display=swap'); 
 
-h1 { color:aquamarine;
-  font-family:'Reenie Beanie', cursive;
-    font-size: 100px;
+
+h1{font-family: 'Reenie Beanie', cursive;
+  color:aquamarine;
+  text-align: center;}
+
+  h3{
     text-align: center;
+    font-family: 'Kalam', cursive;
   }
 
-  h2 {font-family: 'Reenie Beanie', cursive;
-    font-size: 50px;
-    text-align: center;
-  }
-
-  img{
+  .centre{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
     height:200px;
-    width: 200px;
-}
+    width: 200px
+  }
 
 .wrap{
   float: left;
   margin: 5px;
 }
 
-.centre{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  height:200px;
-  width: 200px
-}
-
-div{ 
-  background-image: url('NOM\ NOM\ NOM.gif');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  color: #000000;
-  text-align: left;
-}
-
-body {background-color: rgb(255, 255, 255);}
-
-ol{ 
-  font-family: 'Kalam', cursive;
-}
-
- .additionalpics{
+.additionalpics{
   height:500px;
   width: 500px;
   margin: 5px;
@@ -54,8 +33,118 @@ ol{
   margin-right: auto;
  }
 
+.citation{ 
+  font-size: var(--paragprah);
+  color:lightpink;
+  margin: var(--margin);
+  max-width: 40ch;
+}
 
- h3{
+ol{ 
+  font-family: 'Kalam', cursive;
+}
+
+div{ 
+  background-image: url('NOM\ NOM\ NOM.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: #000000;
   text-align: center;
-  font-family: 'Kalam', cursive
+}
+
+img{
+  margin: 1em
+}
+
+header,footer {
+font-size:small;
+margin: var(--margin);
+}
+
+
+footer{
+  background-color: aquamarine;
+  text-align: left;
+}
+
+a:hover{
+  background-image: url("HighKoala.png");
+  background-position: center;
+  background-size: contain;
+}
+
+@media (min-width:768px) { 
+  :root{
+    --page-spacing:30px; 
+    --margin: 1em;
+    --paragprah: 12px; 
+  }
+  h1 { 
+    
+    font-size: calc(var(--paragprah)*5)
+  } 
+
+  h2{
+    font-size: calc(var(--paragprah)*3);
+    margin: calc(var(--page-spacing));
+    text-align: center;
+  }
+
+  h3{
+    font-size: calc(var(--paragprah)*2); 
+    margin-top: var(--margin)
+  }
+
+  body { font-family: 'Kalam', cursive;
+    font-size: var(--paragprah);
+    background-color: var(--color);
+    margin:var(--margin)
+  }
+
+
+  img{ 
+    width:200px;
+    height: 200px
+  }
+}
+
+
+@media( max-width: 768px){
+  :root{
+   --page-spacing: 36px; 
+   --paragprah: 12px; 
+  --maxwidth: 80ch;
+  --margin:1em;
+}
+
+body{
+margin:var(--margin)
+}
+
+h1 {
+font-size: calc(var(--paragprah)*5);
+}
+
+h1, 
+p
+{ max-width: var(--maxwidth);
+  text-align: center;
+margin-top: var(--page-spacing)
+}
+
+h3{
+  font-size: calc(var(--paragprah)*2);
+  margin-top: var(--margin)
  }
+
+p:not(:first-child) {
+  margin-top: var(--page-spacing)
+}
+
+img{
+  height: 100px;
+  width:100px;
+}
+
+}
