@@ -40,11 +40,21 @@ h1{font-family: 'Reenie Beanie', cursive;
   max-width: 40ch;
 }
 
+.grid1{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.grid {
+	grid-column: 6;
+	grid-row: 1;
+}
+
 ol{ 
   font-family: 'Kalam', cursive;
 }
 
-div{ 
+.div{ 
   background-image: url('NOM\ NOM\ NOM.gif');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -57,9 +67,15 @@ img{
   margin: 1em
 }
 
-header,footer {
+section, footer {
 font-size:small;
 margin: var(--margin);
+}
+
+section {
+	display: grid;
+	grid-auto-rows: 80px;
+	grid-auto-columns: 1fr;
 }
 
 
