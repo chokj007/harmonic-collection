@@ -40,7 +40,7 @@ h1{font-family: 'Reenie Beanie', cursive;
   }
 
     h2{
-      font-size: calc(var(--paragprah)*5hb);
+      font-size: calc(var(--paragprah)*5);
       margin: calc(var(--page-spacing));
       text-align: center;
     }
