@@ -19,7 +19,7 @@ body{
 }
 
 footer {
-  font-size:small;
+  font-size:medium;
   margin: var(--margin);
   background-color: aquamarine;
   text-align: left;
