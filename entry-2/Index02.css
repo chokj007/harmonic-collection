@@ -71,6 +71,8 @@ img{
 footer {
 font-size:small;
 margin: var(--margin);
+background-color: aquamarine;
+text-align: left;
 }
 
 section {
@@ -78,12 +80,6 @@ section {
 	grid-auto-rows: 80px;
 	grid-auto-columns: 1fr;
   font-size:calc(var(--paragprah)*2)
-}
-
-
-footer{
-  background-color: aquamarine;
-  text-align: left;
 }
 
 a:hover{
