@@ -31,6 +31,19 @@ footer {
         background-size: contain;
       }
 
+
+    ol{ 
+    font-family: 'Kalam', cursive;
+    margin: var(--margin);
+  } 
+
+  div {
+	font-family: 'Kalam', cursive;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
   .grid1{
     grid-column: 1;
     grid-row: 1;
@@ -53,18 +66,21 @@ footer {
     max-width: 80ch;
   }
 
-ol{ 
-    font-family: 'Kalam', cursive;
-    margin: var(--margin);
-  } 
-
-  div {
-	font-family: 'Kalam', cursive;
-    padding: 10px;
-    text-align: center;
-    font-size: 30px;
+  .div1{ 
+    background-image: url(smirkingOboi.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: rgb(116, 255, 100);
+    left: 30px;
+    position: sticky;
+     top: 30px;
 }
 
+.div2{
+    font-size: 18px;
+    padding: 20px;
+}
 
 .marquee1 {
     height: 50px;
@@ -76,7 +92,7 @@ ol{
     line-height: 50px;
 
     transform:translateX(-100%);
-    animation: marquee1 10s linear infinite;
+    animation: marquee1 5s linear infinite;
     }
 
     @keyframes marquee1 {
@@ -158,19 +174,4 @@ ol{
   }
 
 
-.div1{ 
-    background-image: url(smirkingOboi.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    color: rgb(116, 255, 100);
-    left: 30px;
-    position: sticky;
-     top: 30px;
-}
-
-.div2{
-    font-size: 18px;
-    padding: 20px;
-}
 
