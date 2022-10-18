@@ -60,10 +60,9 @@ footer {
 }
 
 .citation{ 
-    font-size: var(--paragprah);
+    font-size: calc(var(--paragprah)*2);
     color:lightpink;
     margin: var(--margin);
-    max-width: 80ch;
   }
 
   .div1{ 
