@@ -1,5 +1,47 @@
 
-.topleft {
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100&display=swap'); 
+
+
+h1{font-family: 'Reenie Beanie', cursive;
+  color:aquamarine;
+  text-align: center;}
+
+  h3{
+    text-align: center;
+    font-family: 'Kalam', cursive;
+  }
+
+  section {
+	display: grid;
+	grid-auto-rows: 80px;
+	grid-auto-columns: 1fr;
+  font-size:calc(var(--paragprah)*2)
+}
+
+footer {
+    font-size:small;
+    margin: var(--margin);
+    background-color: aquamarine;
+    text-align: left;
+    }
+
+    a:hover{
+        background-image: url("blinking-bad-hair-day.gif");
+        background-position: center;
+        background-size: contain;
+      }
+
+  .grid1{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .grid {
+      grid-column: 20;
+      grid-row: 1;
+  } 
+
+  .topleft {
     position: absolute;
     top: 8px;
     left: 16px;
@@ -8,26 +50,17 @@
     opacity: 0.2;
   }
 
-div:nth-child(3) { 
-    background-image: url(smirkingOboi.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    color: rgb(116, 255, 100);
-    left: 30px;
-    position: sticky;
-     top: 30px;
-}
-
-div:nth-child(6) {
-    font-size: 18px;
-    padding: 20px;
-}
-
-.Flex {
+  .Flex {
     display: flex;
     align-items: center;
 }
+
+.citation{ 
+    font-size: var(--paragprah);
+    color:lightpink;
+    margin: var(--margin);
+    max-width: 80ch;
+  }
 
 @keyframes animate {
     0%{ 
@@ -42,9 +75,99 @@ div:nth-child(6) {
 
 ol{ 
     font-family: 'Kalam', cursive;
+    margin: var(--margin);
   } 
 
-h2{
-    margin-bottom: 40px;
-    margin-top: 40px; 
+  div {
+	font-family: 'Kalam', cursive;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
 }
+
+
+  @media (min-width:768px) { 
+    :root{
+      --page-spacing:30px; 
+      --margin: 1em;
+      --paragprah: 12px; 
+    }
+    h1 { 
+      
+      font-size: calc(var(--paragprah)*5)
+    } 
+  
+    h2{
+      font-size: calc(var(--paragprah)*3);
+      margin: calc(var(--page-spacing));
+      text-align: center;
+    }
+  
+    h3{
+      font-size: calc(var(--paragprah)*2); 
+      margin-top: var(--margin)
+    }
+  
+    body { font-family: 'Kalam', cursive;
+      font-size: var(--paragprah);
+      background-color: var(--color);
+      margin:var(--margin)
+    }
+  }  
+
+  @media( max-width: 768px){
+    :root{
+     --page-spacing: 36px; 
+     --paragprah: 12px; 
+    --maxwidth: 80ch;
+    --margin:1em;
+  }
+  
+  body{
+  margin:var(--margin)
+  }
+  
+  h1 {
+  font-size: calc(var(--paragprah)*5);
+  }
+  
+  h1, 
+  p
+  { max-width: var(--maxwidth);
+    text-align: center;
+  margin-top: var(--page-spacing)
+  }
+  
+  h3{
+    font-size: calc(var(--paragprah)*2);
+    margin-top: var(--margin)
+   }
+  
+  p:not(:first-child) {
+    margin-top: var(--page-spacing)
+  }
+
+  .Flex {
+    display: flex;
+    align-items: center;
+    font-size: calc(var(--paragprah)*1.5);
+}
+  }
+
+
+.div1{ 
+    background-image: url(smirkingOboi.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: rgb(116, 255, 100);
+    left: 30px;
+    position: sticky;
+     top: 30px;
+}
+
+.div2{
+    font-size: 18px;
+    padding: 20px;
+}
+
