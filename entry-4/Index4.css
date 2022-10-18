@@ -13,7 +13,7 @@ ol{
 
 body{
   background-image: url("Kakapo incoming.png");
-  background-size: 110%;
+  background-size: 90%;
   background-position: bottom;
   background-repeat:repeat-x;
 }
@@ -73,7 +73,6 @@ div{
   font-size: var(--paragprah)*1.5;
   color: darkgreen;
   margin: var(--margin);
-  max-width: 80ch;
   text-align: justify;
 }
 
@@ -123,7 +122,11 @@ div{
 }
 
 body{
-margin:var(--margin)
+    background-image: url("Kakapo incoming.png");
+    background-size: 120%;
+    background-position: bottom;
+    background-repeat:repeat-x;
+    margin:var(--margin)
 }
 
 h1 {
