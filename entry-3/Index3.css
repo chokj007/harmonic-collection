@@ -92,6 +92,10 @@ footer {
     }
 
 
+    .div2{
+      font-size: 18px;
+      padding: 20px;
+  }
 
   @media (min-width:768px) { 
     :root{
