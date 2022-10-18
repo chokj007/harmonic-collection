@@ -71,9 +71,9 @@ div{
 
 .citation{ 
   font-size: var(--paragprah)*1.5;
-  color: darkgreen;
+  color: yellowgreen;
   margin: var(--margin);
-  text-align: justify;
+  text-align: left;
 }
 
 
@@ -110,6 +110,7 @@ div{
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    max-width: 80ch;
   }
 }  
 
@@ -123,6 +124,7 @@ div{
 
 body{
     background-image: url("Kakapo incoming.png");
+    object-fit: cover;
     background-size: 120%;
     background-position: bottom;
     background-repeat:repeat-x;
@@ -148,4 +150,5 @@ h3{
 p:not(:first-child) {
   margin-top: var(--page-spacing)
 }
+
 }
