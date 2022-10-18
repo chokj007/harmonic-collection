@@ -9,9 +9,9 @@ h1{font-family: 'Reenie Beanie', cursive;
   :root{
     --page-spacing:30px; 
     --paragprah: 18px; 
-
   }
   h1 { 
+    
     font-size: calc(var(--paragprah)*12)
   } 
 
