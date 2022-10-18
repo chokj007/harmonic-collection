@@ -67,6 +67,7 @@ footer {
 
   .div1{ 
     background-image: url(smirkingOboi.jpg);
+    object-fit: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
