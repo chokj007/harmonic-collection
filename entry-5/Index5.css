@@ -4,9 +4,17 @@
     --color: azure; 
 }
 
+section{
+	display: grid;
+	grid-auto-rows: 80px;
+	grid-auto-columns: 1fr;
+  font-size:calc(var(--paragprah)*2)
+}
+
 body{
     font-size: var(--paragprah);
-    font-family: 'Reenie Beanie', cursive; }
+    font-family: 'Reenie Beanie', cursive; 
+text-align: center;}
 
 h1{
     font-size: calc(var(--paragprah)*4)
@@ -17,58 +25,44 @@ h2 {
     margin: calc(var(--page-spacing))
 }
 
-
-@media( max-width: 768px){
-    :root{
-     --page-spacing: 36px; 
-    --fontsize: 324x; 
-}
-
-p{ max-width:80ch; 
-    text-align: center;
-margin-top: var(var(--page-spacing))
-}
-
-p:not(:first-child) {
-    margin-top: var(--page-spacing)
-}
-
-}
-
-section{ 
-    margin: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    height: 120px;
-    align-content: space-evenly;
-    justify-content: center;
-    gap: 10px 20px;
+@keyframes move{ 
+    from {left: -1000px}
+    to {left: 1000px}
     }
-        
-    
-    div{ width: 140px;
-   font-size: var(--paragprah)
+
+a:hover{
+    background-image: url("OceanSunfish1.jpg");
+    background-position: center;
+    background-size: contain;
+      }
+
+
+div{ width: 140px;
+    font-size: var(--paragprah)
+ }
+
+footer {
+    font-size:medium;
+    margin: var(--margin);
+    background-color: aquamarine;
+    text-align: left;
+    }
+
+.section{ 
+ margin: 100px;
+ display: flex;
+ flex-wrap: wrap;
+ height: 120px;
+ align-content: space-evenly;
+ justify-content: center;
+ gap: 10px 20px;
 }
-
-
-@media (min-width:768px) {
-
-    
-    main { display: flex;
-        flex-direction: column;
-    flex-wrap: wrap;}
-}  
 
 .foranimation{
     width: 100px;
   height: 100px;
   position: relative;
   animation: move 8s infinite;
-}
-
-@keyframes move{ 
-from {left: -1000px}
-to {left: 1000px}
 }
 
 .foranimation2{ 
@@ -97,3 +91,70 @@ animation-direction: reverse;
     background-image: url("Bubbles.gif");
     height: 500px;
 }
+
+.grid1{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .grid {
+      grid-column: 20;
+      grid-row: 1;
+  }  
+
+
+@media( max-width: 768px){
+    :root{
+     --page-spacing: 36px; 
+    --fontsize: 324x; 
+}
+
+p{ max-width:80ch; 
+    text-align: center;
+margin-top: var(var(--page-spacing))
+}
+
+p:not(:first-child) {
+    margin-top: var(--page-spacing)
+}
+
+footer{
+    text-align: center;
+    font-size: var(--fontsize);
+}
+
+}
+
+@media (min-width:768px) {
+
+    :root{
+        --page-spacing:30px; 
+        --margin: 1em;
+        --paragprah: 12px; 
+      }
+
+      main { display: flex;
+        flex-direction: column;
+    flex-wrap: wrap;}
+
+      h1 { 
+         font-size: calc(var(--paragprah)*5)
+      } 
+    
+      h2{
+        font-size: calc(var(--paragprah)*4);
+        margin: calc(var(--page-spacing));
+        text-align: center;
+      }
+    
+      h3{
+        font-size: calc(var(--paragprah)*2); 
+        margin-top: var(--margin)
+      }
+    
+      body { font-family: 'Kalam', cursive;
+        font-size: calc(var(--paragprah)*1.5);
+        background-color: var(--color);
+        margin:var(--margin);
+      }
+}  
