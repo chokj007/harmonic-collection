@@ -19,7 +19,7 @@ h1{font-family: 'Reenie Beanie', cursive;
 }
 
 footer {
-    font-size:small;
+    font-size:medium;
     margin: var(--margin);
     background-color: aquamarine;
     text-align: left;
@@ -171,6 +171,10 @@ footer {
     align-items: center;
     font-size: calc(var(--paragprah)*1.5);
 }
+footer {
+  text-align: center;
+  }
+
   }
 
 
