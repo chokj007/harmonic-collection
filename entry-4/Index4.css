@@ -73,7 +73,7 @@ div{
   font-size: var(--paragprah)*1.5;
   color: yellowgreen;
   margin: var(--margin);
-  text-align: left;
+  text-align: center;
 }
 
 

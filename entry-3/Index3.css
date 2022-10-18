@@ -59,12 +59,6 @@ footer {
     align-items: center;
 }
 
-.citation{ 
-    font-size: calc(var(--paragprah)*2);
-    color:lightpink;
-    margin: var(--margin);
-  }
-
 .marquee1 {
     height: 50px;
     overflow: hidden;
@@ -89,6 +83,13 @@ footer {
     .div2{
       font-size: 18px;
       padding: 20px;
+  }
+
+  .citation{ 
+    font-size: calc(var(--paragprah)*1.2);
+    color: lightpink;
+    margin: var(--margin);
+    text-align: center;
   }
 
   @media (min-width:768px) { 
@@ -129,6 +130,12 @@ footer {
       left: 30px;
       position: sticky;
        top: 30px;
+  }
+
+  .citation{ 
+    color:lightgreen;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   }  

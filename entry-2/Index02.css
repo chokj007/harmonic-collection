@@ -34,10 +34,10 @@ h1{font-family: 'Reenie Beanie', cursive;
  }
 
 .citation{ 
-  font-size: var(--paragprah);
+  font-size: calc(var(--paragprah)*1.2);
   color:lightpink;
   margin: var(--margin);
-  max-width: 40ch;
+  text-align:center ;
 }
 
 .grid1{
@@ -160,6 +160,10 @@ p:not(:first-child) {
 img{
   height: 100px;
   width:100px;
+}
+
+.citation{ 
+  color: grey;
 }
 
 }

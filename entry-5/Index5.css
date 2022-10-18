@@ -2,6 +2,7 @@
     --page-spacing:30px; 
     --paragprah: 18px; 
     --color: azure; 
+    --margin: 1em;
 }
 
 section{
@@ -89,6 +90,7 @@ animation-direction: reverse;
 
 .bubbles{
     background-image: url("Bubbles.gif");
+    background-repeat: repeat-x;
     height: 500px;
 }
 
@@ -102,6 +104,12 @@ animation-direction: reverse;
       grid-row: 1;
   }  
 
+  .citation{ 
+    font-size: var(--paragprah)*1.5;
+    color: white;
+    margin: var(--margin);
+    text-align: left;
+  }
 
 @media( max-width: 768px){
     :root{
@@ -116,6 +124,10 @@ margin-top: var(var(--page-spacing))
 
 p:not(:first-child) {
     margin-top: var(--page-spacing)
+}
+
+.bubbles{ 
+  margin :var(--margin);
 }
 
 footer{
@@ -156,5 +168,14 @@ footer{
         font-size: calc(var(--paragprah)*1.5);
         background-color: var(--color);
         margin:var(--margin);
+      }
+
+      .citation{ 
+        font-size: var(--paragprah)*3;
+        color:darkblue;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        max-width: 80ch;
       }
 }  
