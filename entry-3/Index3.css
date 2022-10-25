@@ -2,22 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100&display=swap'); 
 
 
-h1{font-family: 'Reenie Beanie', cursive;
-  color:aquamarine;
-  text-align: center;}
-
-  h3{
-    text-align: center;
-    font-family: 'Kalam', cursive;
-  }
-
-  section {
-	display: grid;
-	grid-auto-rows: 80px;
-	grid-auto-columns: 1fr;
-  font-size:calc(var(--paragprah)*2)
-}
-
 footer {
     font-size:medium;
     margin: var(--margin);
@@ -33,26 +17,35 @@ footer {
 
 
     ol{ 
-    font-family: 'Kalam', cursive;
+    font-family: 'Roboto', sans-serif;
     margin: var(--margin);
+    line-height:30px;
   } 
 
-  div {
-	font-family: 'Kalam', cursive;
+  div{
+    font-family: 'Kalam', cursive;
     padding: 10px;
     text-align: center;
-    font-size: 30px;
+  }
+
+div:nth-child(2){
+  background-image: url(smirkingOboi.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: rgb(116, 255, 100);
+  left: 30px;
+  position: sticky;
+   top: 30px;
 }
 
-  .grid1{
-    grid-column: 1;
-    grid-row: 1;
-  }
-  
-  .grid {
-      grid-column: 20;
-      grid-row: 1;
-  } 
+div:nth-child(3){ 
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Have to add header tag in all entries and place its charecteristics in Commoncss */
 
   .Flex {
     display: flex;
@@ -60,13 +53,13 @@ footer {
 }
 
 .marquee1 {
-    height: 50px;
+    height: 200px;
     overflow: hidden;
     position: relative;
     margin: 0;
     width: 100%;
-    height: 100%;
     line-height: 50px;
+    object-fit: contain;
 
     transform:translateX(-100%);
     animation: marquee1 5s linear infinite;
@@ -80,16 +73,15 @@ footer {
     }
     }
 
-    .div2{
-      font-size: 18px;
-      padding: 20px;
-  }
-
   .citation{ 
     font-size: calc(var(--paragprah)*1.2);
     color: lightpink;
     margin: var(--margin);
     text-align: center;
+  }
+
+  img{
+    margin: var(--margin);
   }
 
   @media (min-width:768px) { 
@@ -120,17 +112,6 @@ footer {
       margin:var(--margin)
     }
 
-    .div1{ 
-      background-image: url(smirkingOboi.jpg);
-      object-fit: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-      color: rgb(116, 255, 100);
-      left: 30px;
-      position: sticky;
-       top: 30px;
-  }
 
   .citation{ 
     color:lightgreen;
@@ -160,7 +141,7 @@ footer {
   p
   { max-width: var(--maxwidth);
     text-align: center;
-  margin-top: var(--page-spacing)
+  margin-top: var(--page-spacing);
   }
   
   h3{
@@ -182,6 +163,7 @@ footer {
 .centre{
 margin-left: auto;
 margin-right: auto;
+
 }
 
 footer {
