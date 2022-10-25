@@ -1,0 +1,204 @@
+:root{
+  --page-spacing:30px; 
+  --paragprah: 18px; 
+  --color: azure; 
+  --margin: 1em;
+} 
+
+a:hover{
+  background-image: url("Blehh.gif");
+  background-position: center;
+  background-size: contain;
+}
+
+div{
+  font-family: 'Roboto','sans-serif';
+  background-image: url("Blehh.gif");
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  line-height: 20px;
+  color: var(--color);
+  font-weight: bold;
+  text-align: center;
+  font-size: var(--paragprah);
+  display: block;
+}
+
+footer {
+  font-size:medium;
+  margin: var(--margin);
+  background-color: aquamarine;
+  text-align: left;
+  }
+
+  p:nth-child(8){
+    padding: 90px;
+    color: var(--color);
+    font-weight: 900;
+    background-image: url("Im sexy and ik it.png");
+    background-size: cover;
+
+  }
+
+.burning{ 
+height: 1000%;
+width: 700%;
+margin: 0%;
+padding: 0;
+}
+
+.flex-container{ 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+  .citation{ 
+    margin-right: auto;
+    margin-left: auto
+  }  
+
+  .marquee1 {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    line-height: 50px;
+    object-fit: contain;
+
+    transform:translateX(-100%);
+    animation: marquee1 5s linear infinite;
+    }
+
+    @keyframes marquee1 {
+    0%{ transform: translateX(-100%);
+    }
+    100% {
+    transform: translateX(100%);
+    }
+    }
+
+.bkgdesert{
+  background-image: url("Desert.jpg");
+  background-repeat: repeat-y;
+  background-size: contain;
+
+} 
+
+
+@media (min-width:768px) { 
+  :root{
+    --page-spacing:30px; 
+    --margin: 1em;
+    --paragprah: 12px; 
+  }
+  h1 { 
+    
+    font-size: calc(var(--paragprah)*5)
+  } 
+
+  h2{
+    font-size: calc(var(--paragprah)*3);
+    margin: calc(var(--page-spacing));
+    text-align: center;
+  }
+
+  h3{
+    font-size: calc(var(--paragprah)*2); 
+    margin-top: var(--margin)
+  }
+
+  body {
+    font-size: var(--paragprah);
+    margin:var(--margin)
+  }
+
+  p{
+    margin:var(--margin);
+  }
+
+.citation{ 
+  color:aquamarine;
+  text-align: center;
+}  
+
+img{
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--page-spacing);
+}
+} 
+
+@media( max-width: 768px){
+  :root{
+   --page-spacing: 36px; 
+   --paragprah: 12px; 
+  --maxwidth: 80ch;
+  --margin:1em;
+}
+
+div{
+  font-family: 'Roboto','sans-serif';
+  color: var(--color);
+  font-weight: bold;
+  text-align: center;
+  font-size: calc(var(--paragprah)*1.3);
+  display: block;
+}
+
+body{
+margin:calc(var(--page-spacing)*2)
+}
+
+h1 {
+font-size: calc(var(--paragprah)*5);
+}
+
+h2{
+  margin-top: var(--margin);
+}
+
+h1, 
+p
+{ max-width: var(--maxwidth);
+  text-align: center;
+margin-top: var(--page-spacing);
+}
+
+h3{
+  font-size: calc(var(--paragprah)*2);
+  margin-top: var(--margin);
+ }
+
+p:not(:first-child) {
+  margin-top: var(--page-spacing)
+}
+
+footer {
+text-align: center;
+}
+
+.citation{ 
+  color:var(--color);
+}  
+
+p:nth-child(8){
+  color: var(--color);
+  font-weight: 900;
+  background-image: url("Im sexy and ik it.png");
+  background-position: center;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  padding: var(--page-spacing);
+}
+
+}
+
