@@ -15,7 +15,7 @@
     }
 
 .koala { 
-background-image: url('KoalaCover.jpg');
+background-image: url('../Styles/KoalaCover.jpg');
 background-size: 20%;
 background-position: center;
 background-repeat: repeat-x;
@@ -23,7 +23,7 @@ color: var(--sidebar-color)
 }
 
 .ostrich {
-    background-image: url("OstrichCover.jpeg");
+    background-image: url("../Styles/OstrichCover.jpeg");
     background-size: 30%;
     background-position: center;
     background-repeat: repeat-x;
@@ -31,7 +31,7 @@ color: var(--sidebar-color)
 } 
 
 .kakapo{
-    background-image: url("Kakapo.jpeg"); 
+    background-image: url("../Styles/Kakapo.jpeg"); 
     background-size:30%; 
     background-position: center; 
     background-repeat: repeat-x;
@@ -39,8 +39,16 @@ color: var(--sidebar-color)
 }
 
 .OceanSunfish{
-    background-image: url("OceanSunfishCover.jpg");
+    background-image: url("../Styles/OceanSunfishCover.jpg");
     background-size:30%; 
+    background-position: center; 
+    background-repeat: repeat-x;
+    color: var(--sidebar-color);
+}
+
+.KomodoDragon{
+    background-image: url("../Styles/KomodoCover.jpg");
+    background-size:50%; 
     background-position: center; 
     background-repeat: repeat-x;
     color: var(--sidebar-color);
@@ -50,8 +58,16 @@ color: var(--sidebar-color)
 
     :root {
         --page-spacing: 36px; 
-        --fontsize: 324x; 
-    }
+        --fontsize: 324x; }
+
+        div{ 
+            padding: 10px;
+            background-repeat: repeat-x; 
+            min-height: 30px;
+            font-size: 20vw;
+            text-align: center;
+             padding: var(--page-spacing)
+        }
 }
 
 body{
@@ -93,6 +109,8 @@ nav,
 aside { 
 background-color: var(--sidebar-color)
 }
+
+
 
 
 @media (min-width:768px) {
