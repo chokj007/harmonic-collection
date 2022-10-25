@@ -1,23 +1,52 @@
 :root{
     --page-spacing: 24px; 
     --body-cop: 16px; 
-    --sidebarcolor: white;
+    --sidebarcolor: azure;
     --background-color: aquamarine;
     }
 
- .hi{
+    div{ 
+        padding: 10px;
+        background-repeat: repeat-x; 
+        min-height: 30px;
+        font-size: calc(var(--body-cop)*8);
+        text-align: center;
+         padding: var(--page-spacing)
+    }
+
+.koala { 
 background-image: url('KoalaCover.jpg');
+background-size: 20%;
+background-position: center;
+background-repeat: repeat-x;
+color: var(--sidebar-color)
 }
 
-.child2 {
+.ostrich {
     background-image: url("OstrichCover.jpeg");
+    background-size: 30%;
+    background-position: center;
+    background-repeat: repeat-x;
+    color: var(--sidebar-color)
+} 
+
+.kakapo{
+    background-image: url("Kakapo.jpeg"); 
+    background-size:30%; 
+    background-position: center; 
+    background-repeat: repeat-x;
+    color: var(--sidebar-color)
 }
 
-.child3{
-    background-image: url("Kakapo.jpeg");
+.OceanSunfish{
+    background-image: url("OceanSunfishCover.jpg");
+    background-size:30%; 
+    background-position: center; 
+    background-repeat: repeat-x;
+    color: var(--sidebar-color);
 }
 
-@media(min-width: 768px ){
+@media(max-width: 768px){
 
     :root {
         --page-spacing: 36px; 
@@ -38,13 +67,15 @@ h2 {
     font-size: calc(var(--body-cop)*2)
 }
 
-h3{
+h4 {
     font-size: calc(var(--body-cop)*3);
-    text-align: center;
-    padding: var(--page-spacing)
+    text-align: center
 }
 
-p{ max-width:80ch;}
+p{ max-width:80ch; 
+text-align: center;
+margin-top: var(var(--page-spacing))
+}
 
 p:not(:first child) {
     margin-top: var (--page-spacing)
@@ -71,6 +102,10 @@ background-color: var(--sidebar-color)
 
    nav,
    aside { width: 25%}
+}
+
+a {
+    color: var(--sidebar-color)
 }
 
 a:hover 
