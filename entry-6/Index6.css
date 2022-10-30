@@ -33,13 +33,13 @@ footer {
   text-align: left;
   }
 
-  p:nth-child(8){
-    padding: 90px;
+  .Dragon{
+    background-image: url("Im sexy and ik it.png");
+    background-size:cover;
+    background-position: center;
+    padding: 100px;
     color: var(--color);
     font-weight: 900;
-    background-image: url("Im sexy and ik it.png");
-    background-size: cover;
-
   }
 
 .burning{ 
@@ -188,17 +188,6 @@ text-align: center;
 .citation{ 
   color:var(--color);
 }  
-
-p:nth-child(8){
-  color: var(--color);
-  font-weight: 900;
-  background-image: url("Im sexy and ik it.png");
-  background-position: center;
-  background-size: cover;
-  display: block;
-  width: 100%;
-  padding: var(--page-spacing);
-}
 
 }
 
