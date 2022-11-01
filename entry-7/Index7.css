@@ -5,20 +5,27 @@
     --margin: 1em;
   } 
   
+  body{
+    color: var(--color);
+  }
+
   a:hover{
-    background-image: url("Crazy.jpg");
+    background-image: url("Jumpy.gif");
     background-position: center;
     background-size: contain;
   }
 
+  
   div{
-    font-family: 'Roboto','sans-serif';
     background-image: url("Crazy.jpg");
     background-size: cover;
+    font-family: 'Roboto','sans-serif';
     padding: 10px;
-    width: 200px;
-    height: 150px;
-    margin: 10px;
+    width: 150px;
+    height: 100px;
+    display: block;
+   margin-right: auto;
+   margin-left: auto;
     color: var(--color);
     font-weight: bold;
     text-align: center;
@@ -30,20 +37,88 @@
     margin: var(--margin);
     background-color: beige;
     text-align: left;
+    color: black;
     }
-  
+
+    img{
+        display: block;
+        width: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: var(--page-spacing);
+        opacity: 0;
+        cursor: help;
+      }
+
+
+    img:hover + .big {
+        background-image: url("Jumpy.gif");
+        background-size: cover;
+        background-position: center;
+        width: 150px;
+        height: 100px;
+       }
+
+      
+    .Bkg{
+        background-image: url("2.png");
+        background-position: center;
+        background-size: contain;
+    }
+      
   .flex-container{ 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 0;
     margin: 0;
-    list-style: none; }
+    list-style: none;
+    align-self: center; 
+}
 
     .citation{ 
         margin-right: auto;
-        margin-left: auto
+        margin-left: auto;
+        font-weight: bolder;
       }  
+
+      .color {
+        cursor: wait;
+    }
+
+    .help{
+        cursor: help;
+    }
+
+.pop-out-in {
+  animation: 5s anim-popoutin ease infinite;
+  font-family: 'Roboto','sans-serif';
+  padding-top: 30px;
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  25% {
+    color: rgb(135, 95, 47);
+    transform: scale(2);
+    opacity: 1;
+  }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
       @media (min-width:768px) {
         :root{
@@ -53,9 +128,14 @@
           }
          
         .citation{ 
-          color:aquamarine;
+          color: beige;
           text-align: center;
         }  
+
+        p{
+            text-align: center;
+        }
+
       }
 
       @media (max-width:768px) {
@@ -78,3 +158,7 @@
       } 
 
     }
+
+    
+
+       
