@@ -54,6 +54,13 @@ color: var(--sidebar-color)
     color: var(--sidebar-color);
 }
 
+.Emu{
+    background-image: url("../Styles/EmuCover.jpg");
+    background-size:30%; 
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
 @media(max-width: 768px){
 
     :root {
