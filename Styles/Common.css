@@ -28,3 +28,77 @@ header{
   padding: 10px;
   font-size:calc(var(--paragprah)*2) ;
   }
+
+
+  @media (min-width:768px) {
+    :root{
+        --page-spacing:30px; 
+        --margin: 1em;
+        --paragprah: 12px; 
+      }
+      h1 { 
+        
+        font-size: calc(var(--paragprah)*5)
+      } 
+    
+      h2{
+        font-size: calc(var(--paragprah)*3);
+        margin: calc(var(--page-spacing));
+        text-align: center;
+      }
+    
+      h3{
+        font-size: calc(var(--paragprah)*2); 
+        margin-top: var(--margin)
+      }
+    
+      body {
+        font-size: var(--paragprah);
+        margin:var(--margin)
+      }
+    
+      p{
+        margin:var(--margin);
+      }
+    } 
+
+    @media( max-width: 768px){
+      :root{
+       --page-spacing: 36px; 
+       --paragprah: 12px; 
+      --maxwidth: 80ch;
+      --margin:1em;
+    }
+    
+    body{
+    margin:calc(var(--page-spacing)*2)
+    }
+    
+    h1 {
+    font-size: calc(var(--paragprah)*5);
+    }
+    
+    h2{
+      margin-top: var(--margin);
+    }
+    
+    h1, 
+    p
+    { max-width: var(--maxwidth);
+      text-align: center;
+    margin-top: var(--page-spacing);
+    }
+    
+    h3{
+      font-size: calc(var(--paragprah)*2);
+      margin-top: var(--margin);
+     }
+    
+    p:not(:first-child) {
+      margin-top: var(--page-spacing)
+    }
+    
+    footer {
+    text-align: center;
+    } 
+  }
