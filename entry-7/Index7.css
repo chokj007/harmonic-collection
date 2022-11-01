@@ -10,4 +10,25 @@
     background-position: center;
     background-size: contain;
   }
+
+  div{
+    font-family: 'Roboto','sans-serif';
+    background-image: url("Crazy.jpg");
+    background-size: cover;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    color: var(--color);
+    font-weight: bold;
+    text-align: center;
+    font-size: var(--paragprah);
+  }
   
+  .flex-container{ 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
