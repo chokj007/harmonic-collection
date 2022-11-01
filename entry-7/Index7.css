@@ -24,6 +24,13 @@
     text-align: center;
     font-size: var(--paragprah);
   }
+
+  footer {
+    font-size:medium;
+    margin: var(--margin);
+    background-color: beige;
+    text-align: left;
+    }
   
   .flex-container{ 
     display: flex;
@@ -32,3 +39,42 @@
     padding: 0;
     margin: 0;
     list-style: none; }
+
+    .citation{ 
+        margin-right: auto;
+        margin-left: auto
+      }  
+
+      @media (min-width:768px) {
+        :root{
+            --page-spacing:30px; 
+            --margin: 2em;
+            --paragprah: 12px; 
+          }
+         
+        .citation{ 
+          color:aquamarine;
+          text-align: center;
+        }  
+      }
+
+      @media (max-width:768px) {
+        :root{
+            --page-spacing: 36px; 
+            --paragprah: 12px; 
+           --maxwidth: 80ch;
+           --margin:1em;
+      } 
+
+      .citation{ 
+        color:var(--color);
+      }  
+
+      div{
+        font-weight: bold;
+        text-align: center;
+        font-size: calc(var(--paragprah)*1.3);
+        display: block;
+      } 
+
+    }
