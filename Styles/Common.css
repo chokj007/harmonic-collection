@@ -70,9 +70,6 @@ header{
       --margin:1em;
     }
     
-    body{
-    margin:calc(var(--page-spacing)*2)
-    }
     
     h1 {
     font-size: calc(var(--paragprah)*5);

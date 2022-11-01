@@ -143,6 +143,10 @@
            --margin:1em;
       } 
 
+      body{
+        margin:calc(var(--page-spacing)*2)
+        }
+
       .citation{ 
         color:var(--color);
       }  
