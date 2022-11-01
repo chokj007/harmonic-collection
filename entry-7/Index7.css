@@ -1,0 +1,13 @@
+:root{
+    --page-spacing:30px; 
+    --paragprah: 18px; 
+    --color: azure; 
+    --margin: 1em;
+  } 
+  
+  a:hover{
+    background-image: url("Crazy.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+  
