@@ -118,7 +118,7 @@ margin-right: auto;
         #229a32 67%,
         #00740e80 100%
       );
-      background-size:auto;
+      background-size:auto auto;
       background-clip: border-box;
       background-size: 200vh auto;
       color: #fff;
