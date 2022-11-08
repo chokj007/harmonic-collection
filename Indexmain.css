@@ -61,6 +61,13 @@ color: var(--sidebar-color)
     background-repeat: repeat-x;
 }
 
+.Chameleon{
+    background-image: url("Styles/ChameleonCover.jpg");
+    background-size: 40%;
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
 @media(max-width: 768px){
 
     :root {
