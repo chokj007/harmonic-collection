@@ -67,7 +67,7 @@ div:nth-child(1) * {
 
     img {
         opacity: 0.75;
-        width: 10%;   
+        width: 20%;   
        margin: calc(var(--margin)/2);
        top: 30px;
     }
@@ -98,7 +98,7 @@ margin-right: auto;
     display: block;
     margin-right: 50vh;}
 
-.m2{ position: sticky;
+.m2{ 
     margin-left: 55vh;
 }
 
@@ -106,9 +106,6 @@ margin-right: auto;
     display: block;
     margin-left: 20vh;
 }
-
-  
-
 
     .colorchange
     {
