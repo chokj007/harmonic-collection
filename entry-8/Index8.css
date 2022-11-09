@@ -30,7 +30,7 @@
 div:nth-child(1){
     display: flex; 
 	gap: var(--base);
-	overflow-y: hidden;
+	overflow-y: auto;
     overflow-x: auto;
 }
 
@@ -144,6 +144,12 @@ margin-right: auto;
         color: var(--color);
         padding: calc(var(--margin)*3);
     } 
+    .bkg{ 
+      background-image: url("Onstick.jpg");
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: right -80px bottom;
+      display: block; }
 
 
     @media (min-width:768px) {
@@ -182,9 +188,10 @@ margin-right: auto;
 
       .citation{ 
         color:darkgreen;
-      }  
+      } 
 
+      .bkg{
+        background-position: right -18px bottom;
       }
 
-
-
+      }
