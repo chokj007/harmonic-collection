@@ -19,7 +19,7 @@
   }
 
   div{ 
-    height: calc(var(--base) * 10);
+    height: calc(var(--base) * 11);
     background-image: url("Watchingyou.gif");
     background-size: cover;
     background-position: 100%;
