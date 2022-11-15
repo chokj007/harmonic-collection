@@ -40,6 +40,14 @@ header{
     font-size: 40px;
   } 
 
+  main{
+    -webkit-hyphens: manual; 
+hyphens: manual; /* Specify with `&shy;` */
+}
+
+nobr { white-space: nowrap; }
+
+
 
   @media (min-width:768px) {
     :root{
