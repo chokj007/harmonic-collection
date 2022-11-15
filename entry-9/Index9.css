@@ -5,6 +5,13 @@
     --margin: 1em;  
   } 
 
+  ol{
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+     font-size: 18px;
+     font-weight: bolder;
+  }
+
   a:hover{
     background-image: url("BAWK.gif");
     background-position: center;
@@ -25,6 +32,8 @@
     background-position: 100%;
 	padding: calc(var(--base) /2);    
     color: white;
+    background-position: center;
+	padding: calc(var(--base) /2);  
 }
 
 div:nth-child(1){
@@ -45,4 +54,48 @@ div:nth-child(1) * {
     background-color: lightsalmon;
     text-align: left;
     color: black;
-    }
+    }    }
+
+
+
+    @media (min-width:768px) {
+        :root{
+            --page-spacing:30px; 
+            --margin: 2em;
+            --paragprah: 12px; 
+          }
+         
+          div{
+            background-size: 40%;
+            color: lightsalmon;
+            font-weight: bolder;
+          }
+
+        .citation{ 
+          color: lightsalmon;
+          text-align: center;
+        }  
+
+        /* p{
+            text-align: center;
+        } */
+
+      }
+
+      @media (max-width:768px) {
+        :root{
+            --page-spacing: 36px; 
+            --paragprah: 12px; 
+           --maxwidth: 80ch;
+           --margin:1em;
+      } 
+
+      body{
+        margin:calc((var(--page-spacing)*1.2))
+        }
+
+      .citation{ 
+        color:rgb(196, 106, 28);
+      } 
+
+      }
