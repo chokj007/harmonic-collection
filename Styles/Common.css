@@ -29,6 +29,17 @@ header{
   font-size:calc(var(--paragprah)*2) ;
   }
 
+  h5{ 
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+     font-size: 18px;
+  }
+
+  h4{
+    font-family: 'Kalam', cursive;
+    font-size: 40px;
+  } 
+
 
   @media (min-width:768px) {
     :root{
