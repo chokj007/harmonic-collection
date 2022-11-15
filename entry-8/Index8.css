@@ -39,17 +39,6 @@ div:nth-child(1) * {
 	width: 100%; 
 }
 
-  h5{ 
-    line-height: 30px;
-    font-family: 'Roboto', sans-serif;
-     font-size: 18px;
-  }
-
-  h4{
-    font-family: 'Kalam', cursive;
-    font-size: 40px;
-  } 
-
   footer {
     font-size:medium;
     margin: var(--margin);
