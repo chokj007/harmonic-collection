@@ -1,0 +1,48 @@
+:root{
+    --page-spacing:30px; 
+    --paragprah: 18px; 
+    --color: azure; 
+    --margin: 1em;  
+  } 
+
+  a:hover{
+    background-image: url("BAWK.gif");
+    background-position: center;
+    background-size: contain;
+  }
+
+  section{ 
+    --base: 20px;
+    display: grid;
+	gap: var(--base);
+	padding: var(--base);
+  }
+
+  div{ 
+    height: calc(var(--base) * 11);
+    background-image: url("Scaredchic.gif");
+    background-size: cover;
+    background-position: 100%;
+	padding: calc(var(--base) /2);    
+    color: white;
+}
+
+div:nth-child(1){
+    display: flex; 
+	gap: var(--base);
+	overflow-y: auto;
+    overflow-x: auto;
+}
+
+div:nth-child(1) * {
+    flex-shrink: 0;
+	width: 100%; 
+}
+
+  footer {
+    font-size:medium;
+    margin: var(--margin);
+    background-color: lightsalmon;
+    text-align: left;
+    color: black;
+    }
