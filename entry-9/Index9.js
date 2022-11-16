@@ -1,5 +1,5 @@
 let highlightClass = 'highlight'; 
-let highlightBlocks = document.querySelectorAll('main');
+let highlightBlocks = document.querySelectorAll('.move');
 
 
 highlightBlocks.forEach((block) => {
@@ -9,7 +9,7 @@ highlightBlocks.forEach((block) => {
 
 		entry.isIntersecting ? block.classList.add(highlightClass) : block.classList.remove(highlightClass); 
 	}, {
-		rootMargin: '-40% 0% -40% 0%', // CSS-ish: top/right/bottom/left.
+		rootMargin: '-33% 0% -33% 0%', // CSS: top/right/bottom/left.
 	});
 
 	sectionObserver.observe(block); 
