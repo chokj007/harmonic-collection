@@ -82,10 +82,10 @@ div:nth-child(1) * {
 } */
 
 main { 
-	background-color: lightcoral;
+	background-color: lightsalmon;
 	padding: calc(var(--base)/2);
     margin: calc(var(--margin)*2);
-	transition: all 15s ease-in-out; 
+	transition: all 25s ease-in-out; 
 }
 
 main.highlight { 
