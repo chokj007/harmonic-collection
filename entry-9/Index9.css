@@ -6,7 +6,7 @@
     --base:20px
   } 
 
-  button,ol{
+  ol{
     line-height: 30px;
     font-family: 'Roboto', sans-serif;
      font-size: 18px;
@@ -20,6 +20,7 @@
   }
 
   button {
+    font-family: 'Reenie Beanie', cursive;
     font-size: 30px;
 	background-color: rgb(255, 255, 0);
 	border-radius: calc(var(--base) / 2);
@@ -40,7 +41,7 @@
 
   div{ 
     height: calc(var(--base) * 11);
-    color: red;
+    color: green;
     font-weight: bolder;
     background-image: url("Scaredchic.gif");
     background-size: cover;
@@ -69,11 +70,11 @@ div:nth-child(1) * {
     }
 
     img{
-        width: 50%;   
-       margin: calc(var(--margin)/2);
-      display: block;
-      margin-right: auto;
-      margin-left: auto;
+    width: 50%;   
+    margin: calc(var(--margin)/2);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     }
 
 /* main{
@@ -82,14 +83,14 @@ div:nth-child(1) * {
 
 main { 
 	background-color: lightcoral;
-	padding: calc(var(--margin) / 2);
+	padding: calc(var(--base)/2);
+    margin: calc(var(--margin)*2);
 	transition: all 15s ease-in-out; 
-    will-change: contents;
 }
 
 main.highlight { 
 	background-color: brown;
-    transform: translate(-120vh,-50%);
+    transform: translate(-110vh,-50%);
 }
 
 .bkg{ 
@@ -138,6 +139,11 @@ main.highlight {
 
       .citation{ 
         color:rgb(196, 106, 28);
+        word-spacing: 10px;
       } 
+
+      img{
+        width: 90%;   
+        }
 
       }
