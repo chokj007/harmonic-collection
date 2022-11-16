@@ -22,7 +22,7 @@
   button {
     font-family: 'Reenie Beanie', cursive;
     font-size: 30px;
-	background-color: rgb(255, 255, 0);
+	background-color: rgb(255, 221, 3);
 	border-radius: calc(var(--base) / 2);
 	cursor: help; 
 	padding: calc(var(--base)/2);
@@ -95,18 +95,13 @@ div:nth-child(1) * {
 
 .bkg{ 
     padding: var(--margin);
-    background-image: url("Cluelesschic.gif");
-    background-size: cover;
-    background-position: center;
+    background-color: brown;
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .change {
-    background-image: url("Cluelesschic.gif");
-    background-size: cover;
-    background-position: center;
-    color: white;
+    background-color: rgb(255, 221, 3);
     font-weight: bolder;
     padding: var(--margin);
 }
