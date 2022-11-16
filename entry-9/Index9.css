@@ -102,6 +102,15 @@ div:nth-child(1) * {
     font-weight: bold;
 }
 
+.change {
+    background-image: url("Cluelesschic.gif");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bolder;
+    padding: var(--margin);
+}
+
     @media (min-width:768px) {
         :root{
             --page-spacing:30px; 
@@ -141,6 +150,15 @@ div:nth-child(1) * {
         color:rgb(196, 106, 28);
         word-spacing: 10px;
       } 
+
+      .move { 
+        transition: all 20s ease-in-out; 
+    }
+
+    .move.highlight { 
+        background-color: none;
+        transform:scale(0);
+    }
 
       img{
         width: 90%;   
