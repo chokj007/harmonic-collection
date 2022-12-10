@@ -1,72 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100&display=swap'); 
 
-
-h1{font-family: 'Reenie Beanie', cursive;
-  color:aquamarine;
-  text-align: center;}
-
-  h3{
-    text-align: center;
-    font-family: 'Kalam', cursive;
-  }
-
-  .centre{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    height:200px;
-    width: 200px
-  }
-
-.wrap{
-  float: left;
-  margin: 5px;
-}
-
-.additionalpics{
-  height:500px;
-  width: 500px;
-  margin: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- }
-
-.citation{ 
-  font-size: calc(var(--paragprah)*1.2);
-  color:lightpink;
-  margin: var(--margin);
-  text-align:center ;
-}
-
-.grid1{
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.grid {
-	grid-column: 20;
-	grid-row: 1;
-}
-
-.div{ 
-  background-image: url('NOM\ NOM\ NOM.gif');
-  object-fit: cover;
-  background-repeat:repeat-y;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  color: #000000;
-  text-align: center;
-}
-
-ol{ 
-  font-family: 'Kalam', cursive;
-}
-
+:root{
+  --page-spacing:30px; 
+  --paragprah: 18px; 
+  --color: azure; 
+  --margin: 1em;  
+  --base:20px
+} 
 
 img{
-  margin: 1em
+  margin: 1em;
+  width:200px;
+  height: 200px;
 }
 
 footer {
@@ -76,18 +20,78 @@ background-color: aquamarine;
 text-align: left;
 }
 
-section {
-	display: grid;
-	grid-auto-rows: 80px;
-	grid-auto-columns: 1fr;
-  font-size:calc(var(--paragprah)*2)
-}
-
 a:hover{
   background-image: url("HighKoala.png");
   background-position: center;
   background-size: contain;
 }
+
+section{ 
+--base: 20px;
+display: grid;
+gap: var(--base);
+padding: var(--base);
+}
+
+div{ 
+background-image: url('NOM\ NOM\ NOM new.gif');
+background-repeat:repeat-y;
+background-attachment: fixed;
+background-size: 100% 100%;
+color: white;
+font-weight: bolder;
+padding: var(--base);
+object-fit: cover;
+}
+
+div:nth-child(1){
+line-height: 2em;
+height: calc(var(--base) * 11);
+display: flex; 
+gap: var(--base);
+overflow-y: auto;
+overflow-x: auto;
+}
+
+div:nth-child(1) * {
+flex-shrink: 0;
+width: 100%; 
+}
+
+/* Classes */
+
+.centre{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:var(--page-spacing);
+}
+
+.wrap{
+float: left;
+margin: 5px;
+}
+
+.additionalpics{
+height:500px;
+width: 500px;
+margin: 5px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.citation{ 
+font-size: calc(var(--paragprah)*1.2);
+color:lightpink;
+margin: var(--margin);
+text-align:center ;
+}
+
+.Header{ 
+  background-color: #9ec9ec;
+}
+
 
 @media (min-width:768px) { 
   :root{
@@ -111,17 +115,35 @@ a:hover{
     margin-top: var(--margin)
   }
 
-  body { font-family: 'Kalam', cursive;
+  body { 
     font-size: var(--paragprah);
-    background-color: var(--color);
-    margin:var(--margin)
+    margin:var(--margin);
   }
 
-
-  img{ 
-    width:200px;
-    height: 200px
+  main{
+    display:flex;
+    padding: calc(var(--margin)*3)
   }
+
+  .additionalpics{
+    height:500px;
+    width: 500px;
+    margin: 5px;
+    flex:60%;
+    padding: calc(var(--page-spacing)/6);
+    }
+
+    .Header {
+      writing-mode: vertical-rl;
+      text-orientation: mixed; 
+      padding: 2%;
+    }
+
+    .centre{ 
+      width:300px; 
+      height: 300px;
+    }
+
 }
 
 
@@ -155,11 +177,6 @@ h3{
 
 p:not(:first-child) {
   margin-top: var(--page-spacing)
-}
-
-img{
-  height: 100px;
-  width:100px;
 }
 
 .citation{ 

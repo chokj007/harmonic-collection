@@ -47,6 +47,9 @@ hyphens: manual; /* Specify with `&shy;` */
 
 nobr { white-space: nowrap; }
 
+ol{ 
+  font-family: 'Kalam', cursive;
+}
 
 
   @media (min-width:768px) {
