@@ -58,6 +58,17 @@ flex-shrink: 0;
 width: 100%; 
 }
 
+button {
+font-family: 'Reenie Beanie', cursive;
+font-size: 30px;
+cursor: help; 
+padding: calc(var(--base)/2);
+margin: var(--margin);
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
 /* Classes */
 
 .centre{
@@ -143,9 +154,7 @@ text-align:center ;
       width:300px; 
       height: 300px;
     }
-
 }
-
 
 @media( max-width: 768px){
   :root{
