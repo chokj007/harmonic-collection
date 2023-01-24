@@ -19,5 +19,9 @@ highlightBlocks.forEach((block) => {
 let button = document.querySelector('#activate'); 
 
 button.onclick = () => { 
-	alert('Disclaimer: Chickens are dumb and scared, they will run...eventually. So is their content! READ FAST '); // Pop an alert!
+	alert('Disclaimer: Chickens are dumb and scared, they will run...eventually. So is their content! READ FAST! A SUPRISE is hiding in one of the chickens, start CLUCK-ing! '); // Pop an alert!
 };
+
+function playAudio(url) {
+	new Audio(url).play();
+  }
