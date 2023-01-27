@@ -139,7 +139,8 @@ margin-right: auto;
       background-size: 50%;
       background-repeat: no-repeat;
       background-position: right -80px bottom;
-      display: block; }
+      display: block; 
+    }
 
 
     @media (min-width:768px) {
